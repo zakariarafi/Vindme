@@ -1,10 +1,17 @@
 package lms.mobile.vindme.activity.activity.profile;
 
+import static androidx.navigation.Navigation.findNavController;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import lms.mobile.vindme.activity.activity.cart.CartActivity;
 import com.example.vindme.R;
@@ -18,7 +25,6 @@ public class ProfileActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    EdgeToEdge.enable(this);
     setContentView(R.layout.activity_profile);
 
     BottomNavigationView bottomNav = findViewById(R.id.bottomNav);
